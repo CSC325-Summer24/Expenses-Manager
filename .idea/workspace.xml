@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ae5f67-a013-4cbc-a589-49fa29fa9b6b" name="Changes" comment="test jan">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/files/jan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/files/jan.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/files/jan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/files/jan.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,7 @@
       <workItem from="1710732741753" duration="608000" />
       <workItem from="1710733353801" duration="5503000" />
       <workItem from="1718468524404" duration="3045000" />
-      <workItem from="1718486481929" duration="927000" />
+      <workItem from="1718486481929" duration="1430000" />
     </task>
     <task id="LOCAL-00001" summary="reduce Java version to 17">
       <option name="closed" value="true" />
