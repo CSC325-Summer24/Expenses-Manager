@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <BorderPane prefHeight="798.0" prefWidth="640.0">
+         <top>
+            <AnchorPane prefHeight="57.0" prefWidth="648.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="15.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpressManager">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Button>
+                  <Button layoutX="422.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="About Us">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="495.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="Dashboard">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="580.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-text-fill: #fff; -fx-background-radius: 7;" text="Log In">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="200.0" prefWidth="589.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="141.0" layoutY="144.0" prefHeight="100.0" prefWidth="10.0" />
+                  <Label alignment="CENTER" layoutX="24.0" layoutY="42.0" style="-fx-background-color: #f7f7f7;" text="Track Smart, Save Big!" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <padding>
+                        <Insets bottom="35.0" left="150.0" right="150.0" top="35.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BOTTOM_CENTER" layoutX="-3.0" layoutY="155.0" prefHeight="78.0" prefWidth="644.0" style="-fx-background-color: transparent;" text="© 2024 ExpenseManager. All Rights Reserved." AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                     <font>
+                        <Font name="Roboto" size="13.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="FACEBOOK" layoutX="285.0" layoutY="198.0" />
+                  <FontAwesomeIconView glyphName="LINKEDIN" layoutX="310.0" layoutY="198.0" />
+                  <FontAwesomeIconView glyphName="TWITTER" layoutX="360.0" layoutY="198.0" />
+                  <FontAwesomeIconView glyphName="INSTAGRAM" layoutX="335.0" layoutY="198.0" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="162.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExpressManager">
+                     <font>
+                        <Font name="Roboto Bold" size="43.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="140.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A tool designed to help you manage their finances more effectively and efficiently">
+                     <font>
+                        <Font name="Roboto" size="10.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="20.0" layoutY="93.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="3.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us">
+                           <font>
+                              <Font name="Roboto Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learn more about our mission to simplify your " />
+                        <Button layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7;" text="Learn More" />
+                        <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="financial management and help you achieve " />
+                        <Text layoutX="8.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="your financial goals." />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@teampic.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="345.0" layoutY="92.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="3.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+                           <font>
+                              <Font name="Roboto Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get a comprehensive overview of your " />
+                        <Button layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7;" text="View" />
+                        <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="expenses, income, and financial health all in " />
+                        <Text layoutX="7.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="one place." />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@teampic.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="182.0" layoutY="317.0" prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="3.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create an account">
+                           <font>
+                              <Font name="Roboto Bold" size="20.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join us today to take control of your finances" />
+                        <Button layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7;" text="Sign Up" />
+                        <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with our user-friendly expense management " />
+                        <Text layoutX="7.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tool." />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@teampic.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>
