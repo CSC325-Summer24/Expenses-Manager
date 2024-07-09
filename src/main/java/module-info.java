@@ -21,4 +21,7 @@ module com.example.csc325_firebase_webview_auth {
     exports com.example.csc325_firebase_webview_auth.view;
     exports com.example.csc325_firebase_webview_auth.model;
     opens com.example.csc325_firebase_webview_auth.model;
+
+    //this export the fontawesome package to javafx.fxml
+    opens de.jensd.fx.glyphs.fontawesome to javafx.fxml;
 }
