@@ -23,9 +23,9 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        fstore = contxtFirebase.firebase();
-        fauth = FirebaseAuth.getInstance();
-        scene = new Scene(loadFXML("/files/AccessFBView.fxml"));
+        //fstore = contxtFirebase.firebase();
+        //fauth = FirebaseAuth.getInstance();
+        scene = new Scene(loadFXML("/files/AccessFBView.fxml"),652,652);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
