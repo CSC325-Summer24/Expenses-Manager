@@ -1,3 +1,11 @@
 .root {
-	-fx-font: 13px "Roboto";
+	-fx-font: 12px "Roboto";
 }
+
+.button {
+	-fx-background-radius: 10;	
+	/*-fx-background-color: #000000;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);*/
+}
+/*https://stackoverflow.com/questions/54844351/javafx-dropshadow-css-what-do-the-parameters-mean-how-to-implement-width-and-h*/

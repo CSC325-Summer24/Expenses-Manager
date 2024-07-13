@@ -1,0 +1,10 @@
+.root {
+	-fx-font: 13px "Roboto";
+}
+
+.button {
+	-fx-background-color: #000000;
+	-fx-background-radius: 10;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+}
