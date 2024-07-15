@@ -50,12 +50,12 @@
             <Font name="Roboto Bold" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="256.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 10;" text="View Expenses">
+      <Button layoutX="256.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="View Expenses">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="434.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 10;" text="Edit/Delete">
+      <Button layoutX="434.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="Edit/Delete">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
@@ -70,17 +70,17 @@
             <Font name="Roboto Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="432.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 10;" text="Edit/Delete">
+      <Button layoutX="432.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="Edit/Delete">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 10;" text="View Reports">
+      <Button layoutX="256.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="View Reports">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="88.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 10;" text="Add Report">
+      <Button layoutX="88.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 6;" text="Add Report">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
@@ -88,7 +88,7 @@
       <Line endX="504.0" layoutX="118.0" layoutY="136.0" startX="-100.0" stroke="#cccccc" />
       <Line endX="504.0" layoutX="118.0" layoutY="214.0" startX="-100.0" stroke="#cccccc" />
       <Line endX="504.0" layoutX="118.0" layoutY="297.0" startX="-100.0" stroke="#cccccc" />
-      <Button layoutX="88.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 10;" text="Add Expense">
+      <Button layoutX="88.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 6;" text="Add Expense">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
