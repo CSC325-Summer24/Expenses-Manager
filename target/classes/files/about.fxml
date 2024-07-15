@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="625.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="files.About">
+   <children>
+      <BorderPane layoutY="7.0" prefHeight="625.0" prefWidth="625.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="625.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="55.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExpeneseManager" />
+                  <Text layoutX="547.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us" />
+                  <Text layoutX="620.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" />
+                  <Button layoutX="714.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Log in" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="560.0" prefWidth="91.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <AnchorPane prefHeight="560.0" prefWidth="666.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="16.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Who We Are">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#948f8f" layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capstone Project for CSC325" />
+                  <Text layoutX="16.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About us">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At ExpenseManager, our mission is to empower individuals to take control of their finances with ease and confidence. With personalized user profiles stored securely on our servers, you can access your financial data anytime, anywhere. We believe in making powerful financial tools accessible to everyone." wrappingWidth="629.69580078125" />
+                  <Text layoutX="15.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExpenseManager is designed to be advanced yet intuitive, providing a simple, user-friendly interface that makes managing your finances effortless. ExpenseManager leverages the robustness of a database, the reliability of Firebase, and the versatility of the Java programming language to deliver a seamless financial management experience. As a free and open-source application, ExpenseManager is continuously evolving, incorporating community feedback and the latest technological advancements." wrappingWidth="628.21630859375" />
+                  <Text layoutX="13.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How does it work ?">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Using ExpenseManager is straightforward:" />
+                  <Text layoutX="13.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Your Profile: Set up your user profile, securely stored with Firebase for easy access from any device." wrappingWidth="574.02490234375" />
+                  <Text layoutX="13.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Track Your Expenses: Add, categorize, and monitor your expenses with just a few clicks." wrappingWidth="513.5703125" />
+                  <Text layoutX="16.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analyze Your Finances: Utilize advanced reporting features to gain insights into your spending habits and make informed financial decisions." wrappingWidth="627.6953125" />
+                  <Text layoutX="14.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stay Organized: Benefit from features like budget planning, expense categorization, and real-time data synchronization." wrappingWidth="594.71923828125" />
+                  <Text layoutX="16.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join the ExpenseManager community today and experience the freedom of effortless financial management. What's not to love?" wrappingWidth="611.67236328125" />
+                  <Line endX="493.0" layoutX="115.0" layoutY="474.0" startX="-100.0" stroke="#d7d7d7" />
+                  <ImageView fitHeight="84.0" fitWidth="180.0" layoutX="-90.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@receive%20cash.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="171.0" layoutX="-90.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user%20profile%20interface.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="236.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©2024 Group 2. All Rights Reserved." wrappingWidth="150.2587890625">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="19.0" fitWidth="176.0" layoutX="267.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Social%20Icons.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+         <right>
+            <AnchorPane prefHeight="560.0" prefWidth="112.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="199.0" layoutX="-83.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Woman%20putting%20puzzle%20pieces%20together.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="181.0" layoutX="-109.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Cloud%20storage,%20database%20and%20hardware.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

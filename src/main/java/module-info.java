@@ -10,6 +10,7 @@ module com.example.csc325_firebase_webview_auth {
     requires google.cloud.firestore;
     requires firebase.admin;
     requires com.google.api.apicommon;
+    requires static lombok;
 
     requires google.cloud.core;
     requires com.google.auth;

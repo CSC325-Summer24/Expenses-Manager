@@ -6,6 +6,10 @@ import com.google.cloud.firestore.Firestore;
 import com.google.firebase.auth.FirebaseAuth;
 import java.io.IOException;
 import java.util.Objects;
+import java.io.File;
+import java.net.URL;
+import java.util.Arrays;
+import java.util.Enumeration;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -38,7 +42,7 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml ));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         return fxmlLoader.load();
     }
 
