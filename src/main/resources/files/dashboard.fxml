@@ -7,7 +7,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
@@ -30,81 +29,74 @@
             <Font name="Roboto Bold" size="31.0" />
          </font>
       </Label>
-      <Label layoutX="219.0" layoutY="626.0" text="©2024 Group 2. All Rights Reserved.">
+      <Label layoutX="230.0" layoutY="627.0" text="©2024 Group 2. All Rights Reserved.">
          <font>
             <Font name="Roboto" size="12.0" />
          </font></Label>
-      <Pane layoutX="252.0" layoutY="93.0" prefHeight="46.0" prefWidth="148.0" style="-fx-background-color: #EEE;">
-         <children>
-            <Button layoutX="6.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #FFF; -fx-text-fill: #000;" text="Home">
-               <font>
-                  <Font name="Roboto" size="12.0" />
-               </font></Button>
-            <Button layoutX="69.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: #EEE; -fx-text-fill: #000;" text="Payments">
-               <font>
-                  <Font name="Roboto" size="12.0" />
-               </font></Button>
-         </children>
-      </Pane>
       <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="608.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@profile_empty.png" />
          </image>
       </ImageView>
-      <TableView layoutX="17.0" layoutY="337.0" prefHeight="271.0" prefWidth="619.0" style="-fx-border-color: #EEE;">
+      <TableView layoutX="17.0" layoutY="307.0" prefHeight="289.0" prefWidth="619.0" style="-fx-border-color: #EEE;">
         <columns>
           <TableColumn prefWidth="407.0" text="Description" />
           <TableColumn minWidth="0.0" prefWidth="127.0" text="Date" />
             <TableColumn prefWidth="84.0" text="Amount" />
         </columns>
       </TableView>
-      <Label layoutX="17.0" layoutY="139.0" text="Welcome, User">
+      <Label layoutX="17.0" layoutY="100.0" text="Welcome, User">
          <font>
             <Font name="Roboto Bold" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="88.0" layoutY="188.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000;" text="min pay due">
+      <Button layoutX="256.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 10;" text="View Expenses">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="188.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000;" text="curr balance">
+      <Button layoutX="434.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 10;" text="Edit/Delete">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="434.0" layoutY="188.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000;" text="ava credit">
-         <font>
-            <Font name="Roboto" size="12.0" />
-         </font>
-      </Button>
-      <Label layoutX="18.0" layoutY="304.0" text="Payments">
+      <Label layoutX="18.0" layoutY="272.0" text="Notifications">
          <font>
             <Font name="Roboto Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="16.0" layoutY="234.0" text="Make a Payment">
+      <Label layoutX="16.0" layoutY="192.0" text="Manage Reports">
          <font>
             <Font name="Roboto Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="88.0" layoutY="269.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000;" text="pay amnt">
+      <Button layoutX="432.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 10;" text="Edit/Delete">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="269.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000;" text="date">
+      <Button layoutX="256.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 10;" text="View Reports">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="434.0" layoutY="270.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF;" text="report">
+      <Button layoutX="88.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 10;" text="Add Report">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Line endX="504.0" layoutX="118.0" layoutY="175.0" startX="-100.0" stroke="#cccccc" />
-      <Line endX="504.0" layoutX="118.0" layoutY="256.0" startX="-100.0" stroke="#cccccc" />
-      <Line endX="504.0" layoutX="118.0" layoutY="329.0" startX="-100.0" stroke="#cccccc" />
+      <Line endX="504.0" layoutX="118.0" layoutY="136.0" startX="-100.0" stroke="#cccccc" />
+      <Line endX="504.0" layoutX="118.0" layoutY="214.0" startX="-100.0" stroke="#cccccc" />
+      <Line endX="504.0" layoutX="118.0" layoutY="297.0" startX="-100.0" stroke="#cccccc" />
+      <Button layoutX="88.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 10;" text="Add Expense">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="171.0" layoutX="258.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Social%20Icons.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
