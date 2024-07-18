@@ -32,7 +32,7 @@ public class App extends Application {
         fstore = contxtFirebase.firebase();
         fauth = FirebaseAuth.getInstance();
 
-        scene = new Scene(loadFXML("/files/login.fxml"), 700, 500); //loads the login page
+        scene = new Scene(loadFXML("/files/mainPage.fxml"), 652, 652); //loads the main page
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/files/main.css")).toExternalForm()); //uses the css
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -52,3 +52,15 @@ public class App extends Application {
     }
 
 }
+/*
+* To anyone reading this or making this class project
+* I recommend that you watch the Module 10 video lecture as it will help you a lot
+* You can also go over prof. code before you code
+* Go over the FirestoneContext - AccessFBView.java - AccessFBView.fxml - WebContainerController - etc.
+* and just read how everything is being tied in, specially how to readFirebase or even as simple as switching from a
+* different scene
+*
+* Prof. already gave you the skeleton for the program that you will be creating so there is no need to reinvent the wheel
+* Use what is already there to your advantage
+*
+*/

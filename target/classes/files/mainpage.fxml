@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -19,22 +18,22 @@
          <top>
             <AnchorPane prefHeight="57.0" prefWidth="648.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="expressManagerButton" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpressManager" onAction="#handleExpressManagerButtonAction">
+                  <Button fx:id="expressManagerButton" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleExpressManagerButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpressManager">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Button>
-                  <Button fx:id="aboutUsButton" layoutX="422.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="About Us" onAction="#handleAboutUsButtonAction">
+                  <Button fx:id="aboutUsButton" layoutX="422.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleAboutUsButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="About Us">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Button>
-                  <Button fx:id="dashboardButton" layoutX="495.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="Dashboard" onAction="#handleDashboardButtonAction">
+                  <Button fx:id="dashboardButton" layoutX="495.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDashboardButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="Dashboard">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Button>
-                  <Button fx:id="loginButton" layoutX="580.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-text-fill: #fff; -fx-background-radius: 7;" text="Log In" onAction="#handleLoginButtonAction">
+                  <Button fx:id="loginButton" layoutX="580.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" style="-fx-background-color: #000; -fx-text-fill: #fff; -fx-background-radius: 7;" text="Log In">
                      <font>
                         <Font size="10.0" />
                      </font>
@@ -59,10 +58,16 @@
                         <Font name="Roboto" size="13.0" />
                      </font>
                   </Label>
-<!--                  <FontAwesomeIconView glyphName="FACEBOOK" layoutX="285.0" layoutY="198.0" onMouseClicked="#handleFacebookIconClick"/>-->
-<!--                  <FontAwesomeIconView glyphName="LINKEDIN" layoutX="310.0" layoutY="198.0" onMouseClicked="#handleLinkedInIconClick"/>-->
-<!--                  <FontAwesomeIconView glyphName="TWITTER" layoutX="360.0" layoutY="198.0" onMouseClicked="#handleTwitterIconClick"/>-->
-<!--                  <FontAwesomeIconView glyphName="INSTAGRAM" layoutX="335.0" layoutY="198.0" onMouseClicked="#handleInstagramIconClick"/>-->
+
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="220.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Social_Icons.png" />
+                     </image>
+                  </ImageView>
+                  <!--                  <FontAwesomeIconView glyphName="FACEBOOK" layoutX="285.0" layoutY="198.0" onMouseClicked="#handleFacebookIconClick"/>-->
+                  <!--                  <FontAwesomeIconView glyphName="LINKEDIN" layoutX="310.0" layoutY="198.0" onMouseClicked="#handleLinkedInIconClick"/>-->
+                  <!--                  <FontAwesomeIconView glyphName="TWITTER" layoutX="360.0" layoutY="198.0" onMouseClicked="#handleTwitterIconClick"/>-->
+                  <!--                  <FontAwesomeIconView glyphName="INSTAGRAM" layoutX="335.0" layoutY="198.0" onMouseClicked="#handleInstagramIconClick"/>-->
                   <!--
                   for some reason attribute glyphName is not allowed and the property is always on read-only
                       however when this is cut out and rerun, the App is able to load the mainpage.fxml
@@ -93,7 +98,7 @@
                            </font>
                         </Text>
                         <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learn more about our mission to simplify your " />
-                        <Button fx:id="learnMoreButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="Learn More" onAction="#handleLearnMoreButtonAction" />
+                        <Button fx:id="learnMoreButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleLearnMoreButtonAction" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="Learn More" />
                         <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="financial management and help you achieve " />
                         <Text layoutX="8.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="your financial goals." />
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
@@ -111,7 +116,7 @@
                            </font>
                         </Text>
                         <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get a comprehensive overview of your " />
-                        <Button fx:id="viewButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="View" onAction="#handleViewButtonAction" />
+                        <Button fx:id="viewButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleViewButtonAction" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="View" />
                         <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="expenses, income, and financial health all in " />
                         <Text layoutX="7.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="one place." />
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
@@ -129,7 +134,7 @@
                            </font>
                         </Text>
                         <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join us today to take control of your finances" />
-                        <Button fx:id="signUpButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="Sign Up" onAction="#handleSignUpButtonAction" />
+                        <Button fx:id="signUpButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleSignUpButtonAction" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="Sign Up" />
                         <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with our user-friendly expense management " />
                         <Text layoutX="7.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tool." />
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">

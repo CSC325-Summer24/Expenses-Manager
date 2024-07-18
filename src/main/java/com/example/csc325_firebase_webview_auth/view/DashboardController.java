@@ -48,6 +48,9 @@ public class DashboardController {
     /*
     *To-Do
     * Finish Dashboard - Add expense, view etc.
+    * Sabil is making some windows for the rest
+    *
+    * Refine more - add comments
     */
 
     private void loadPage(String fxml) {
