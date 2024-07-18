@@ -1,37 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
-  All rights reserved. Use is subject to license terms.
-
-  This file is available and licensed under the following license:
-
-  Redistribution and use in source and binary forms, with or without
-  modification, are permitted provided that the following conditions
-  are met:
-
-  - Redistributions of source code must retain the above copyright
-    notice, this list of conditions and the following disclaimer.
-  - Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in
-    the documentation and/or other materials provided with the distribution.
-  - Neither the name of Oracle Corporation nor the names of its
-    contributors may be used to endorse or promote products derived
-    from this software without specific prior written permission.
-
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
@@ -45,27 +13,28 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView">
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.MainPageController">
    <content>
       <BorderPane prefHeight="798.0" prefWidth="640.0">
          <top>
             <AnchorPane prefHeight="57.0" prefWidth="648.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="15.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpressManager">
-                     <font>
-                        <Font size="10.0" />
-                     </font></Button>
-                  <Button layoutX="422.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="About Us">
+                  <Button fx:id="expressManagerButton" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpressManager" onAction="#handleExpressManagerButtonAction">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Button>
-                  <Button layoutX="495.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="Dashboard">
+                  <Button fx:id="aboutUsButton" layoutX="422.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="About Us" onAction="#handleAboutUsButtonAction">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Button>
-                  <Button layoutX="580.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-text-fill: #fff; -fx-background-radius: 7;" text="Log In">
+                  <Button fx:id="dashboardButton" layoutX="495.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="Dashboard" onAction="#handleDashboardButtonAction">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="loginButton" layoutX="580.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-text-fill: #fff; -fx-background-radius: 7;" text="Log In" onAction="#handleLoginButtonAction">
                      <font>
                         <Font size="10.0" />
                      </font>
@@ -90,10 +59,16 @@
                         <Font name="Roboto" size="13.0" />
                      </font>
                   </Label>
-                  <FontAwesomeIconView glyphName="FACEBOOK" layoutX="285.0" layoutY="198.0" />
-                  <FontAwesomeIconView glyphName="LINKEDIN" layoutX="310.0" layoutY="198.0" />
-                  <FontAwesomeIconView glyphName="TWITTER" layoutX="360.0" layoutY="198.0" />
-                  <FontAwesomeIconView glyphName="INSTAGRAM" layoutX="335.0" layoutY="198.0" />
+<!--                  <FontAwesomeIconView glyphName="FACEBOOK" layoutX="285.0" layoutY="198.0" onMouseClicked="#handleFacebookIconClick"/>-->
+<!--                  <FontAwesomeIconView glyphName="LINKEDIN" layoutX="310.0" layoutY="198.0" onMouseClicked="#handleLinkedInIconClick"/>-->
+<!--                  <FontAwesomeIconView glyphName="TWITTER" layoutX="360.0" layoutY="198.0" onMouseClicked="#handleTwitterIconClick"/>-->
+<!--                  <FontAwesomeIconView glyphName="INSTAGRAM" layoutX="335.0" layoutY="198.0" onMouseClicked="#handleInstagramIconClick"/>-->
+                  <!--
+                  for some reason attribute glyphName is not allowed and the property is always on read-only
+                      however when this is cut out and rerun, the App is able to load the mainpage.fxml
+
+                      -->
+
                </children>
             </AnchorPane>
          </bottom>
@@ -118,7 +93,7 @@
                            </font>
                         </Text>
                         <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learn more about our mission to simplify your " />
-                        <Button layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7;" text="Learn More" />
+                        <Button fx:id="learnMoreButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="Learn More" onAction="#handleLearnMoreButtonAction" />
                         <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="financial management and help you achieve " />
                         <Text layoutX="8.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="your financial goals." />
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
@@ -136,12 +111,12 @@
                            </font>
                         </Text>
                         <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get a comprehensive overview of your " />
-                        <Button layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7;" text="View" />
+                        <Button fx:id="viewButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="View" onAction="#handleViewButtonAction" />
                         <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="expenses, income, and financial health all in " />
                         <Text layoutX="7.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="one place." />
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@teampic.png" />
+                              <Image url="@dashboard.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -154,12 +129,12 @@
                            </font>
                         </Text>
                         <Text layoutX="7.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join us today to take control of your finances" />
-                        <Button layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7;" text="Sign Up" />
+                        <Button fx:id="signUpButton" layoutX="7.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: #000; -fx-background-radius: 7; -fx-text-fill: #fff;" text="Sign Up" onAction="#handleSignUpButtonAction" />
                         <Text layoutX="7.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="with our user-friendly expense management " />
                         <Text layoutX="7.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tool." />
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@teampic.png" />
+                              <Image url="@account.png" />
                            </image>
                         </ImageView>
                      </children>

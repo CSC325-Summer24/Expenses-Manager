@@ -32,7 +32,6 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
-<?import com.gluonhq.charm.glisten.control.Icon?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.PasswordField?>
@@ -45,83 +44,76 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.LoginController">
+
+   <!-- Left Pane for Login -->
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #365577;" BorderPane.alignment="CENTER">
          <children>
-            <PasswordField layoutX="95.0" layoutY="280.0" promptText="Password" style="-fx-text-fill: #fff;">
+            <PasswordField fx:id="passwordField" layoutX="95.0" layoutY="280.0" promptText="Password" style="-fx-text-fill: #000;">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </PasswordField>
-            <TextField layoutX="95.0" layoutY="237.0" promptText="Username" style="-fx-text-fill: #fff;">
+            <TextField fx:id="usernameField" layoutX="95.0" layoutY="237.0" promptText="Username" style="-fx-text-fill: #000;">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <Icon content="ACCOUNT_CIRCLE" layoutX="61.0" layoutY="237.0" style="-fx-text-fill: #fff;" />
-            <Icon content="LOCK" layoutX="61.0" layoutY="280.0" style="-fx-text-fill: #fff;" />
-            <Button layoutX="143.0" layoutY="340.0" mnemonicParsing="false" style="-fx-background-color: #fff; -fx-text-fill: #000;" text="Log In" />
+            <Button fx:id="loginButton" layoutX="143.0" layoutY="340.0" mnemonicParsing="false" style="-fx-background-color: #fff; -fx-text-fill: #000;" text="Log In" onAction="#handleLoginButtonAction"/>
+            <Text fx:id="loginErrorText" fill="#ff0000" layoutX="95.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@safe.gif" />
+                  <Image url="@safe.gif"/>
                </image>
             </ImageView>
             <Text fill="#aeacac" layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
                <font>
-                  <Font size="20.0" />
+                  <Font size="20.0"/>
                </font>
             </Text>
          </children>
       </AnchorPane>
    </left>
 
+   <!-- Right Pane for Signup -->
    <right>
       <AnchorPane prefHeight="400.0" prefWidth="415.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
          <children>
-            <TextField layoutX="95.0" layoutY="194.0" promptText="Username">
+            <TextField fx:id="signupUsernameField" layoutX="95.0" layoutY="194.0" promptText="Username">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <PasswordField layoutX="95.0" layoutY="280.0" promptText="Password">
+            <PasswordField fx:id="signupPasswordField" layoutX="95.0" layoutY="280.0" promptText="Password">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </PasswordField>
-            <TextField layoutX="95.0" layoutY="237.0" promptText="Email">
+            <TextField fx:id="signupEmailField" layoutX="95.0" layoutY="237.0" promptText="Email">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <PasswordField layoutX="95.0" layoutY="323.0" promptText="Re-type Password">
+            <PasswordField fx:id="signupRetypePasswordField" layoutX="95.0" layoutY="323.0" promptText="Re-type Password">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </PasswordField>
-            <Icon content="ACCOUNT_CIRCLE" layoutX="61.0" layoutY="194.0" />
-            <Icon content="EMAIL" layoutX="61.0" layoutY="237.0" />
-            <Icon content="LOCK" layoutX="61.0" layoutY="280.0" />
-            <Icon content="LOCK" layoutX="61.0" layoutY="323.0" />
-            <Line endY="487.0" layoutY="14.0" startY="-12.999999046325684" />
-            <Button layoutX="143.0" layoutY="383.0" mnemonicParsing="false" style="-fx-background-color: #365577;" text="Sign Up" />
+            <Line endY="487.0" layoutY="14.0" startY="-12.999999046325684"/>
+            <Button fx:id="signupButton" layoutX="143.0" layoutY="383.0" mnemonicParsing="false" style="-fx-background-color: #365577;" text="Sign Up" onAction="#handleSignupButtonAction"/>
+            <Text fx:id="signupErrorText" fill="#ff0000" layoutX="95.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="96.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@piechart.gif" />
+                  <Image url="@piechart.gif"/>
                </image>
             </ImageView>
             <Text layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Signup">
                <font>
-                  <Font size="20.0" />
+                  <Font size="20.0"/>
                </font>
             </Text>
-            <Button layoutX="295.0" layoutY="5.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;">
-               <graphic>
-                  <Icon content="CANCEL" style="-fx-text-fill: #000;" />
-               </graphic>
-            </Button>
          </children>
       </AnchorPane>
    </right>
-
 </BorderPane>

@@ -9,17 +9,18 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="625.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="files.About">
+<AnchorPane prefHeight="625.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.AboutController">
    <children>
       <BorderPane layoutY="7.0" prefHeight="625.0" prefWidth="625.0">
          <top>
             <AnchorPane prefHeight="65.0" prefWidth="625.0" BorderPane.alignment="CENTER">
                <children>
-                  <Text layoutX="55.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExpeneseManager" />
-                  <Text layoutX="547.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us" />
-                  <Text layoutX="620.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" />
-                  <Button layoutX="714.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Log in" textFill="WHITE" />
+
+                  <Button fx:id="expressManagerButton"  layoutX="55.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleExpressManagerButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpenseManager" textFill="WHITE" />
+                  <Button fx:id="aboutUsButton" layoutX="540.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleAboutUsButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="About Us" textFill="WHITE" />
+                  <Button fx:id="dashboardButton" layoutX="623.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleDashboardButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="Dashboard" textFill="WHITE" />
+                  <Button fx:id="loginButton" layoutX="714.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleLoginButtonAction"  style="-fx-background-color: #000000;" text="Log In" textFill="WHITE"  />
+
                </children>
             </AnchorPane>
          </top>
@@ -56,12 +57,12 @@
                   <Line endX="493.0" layoutX="115.0" layoutY="474.0" startX="-100.0" stroke="#d7d7d7" />
                   <ImageView fitHeight="84.0" fitWidth="180.0" layoutX="-90.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@receive%20cash.png" />
+                        <Image url="@receive_cash.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="106.0" fitWidth="171.0" layoutX="-90.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@user%20profile%20interface.png" />
+                        <Image url="@user_profile_interface.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="236.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="©2024 Group 2. All Rights Reserved." wrappingWidth="150.2587890625">
@@ -71,7 +72,7 @@
                   </Text>
                   <ImageView fitHeight="19.0" fitWidth="176.0" layoutX="267.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@Social%20Icons.png" />
+                        <Image url="@Social_Icons.png" />
                      </image>
                   </ImageView>
                </children>
@@ -82,12 +83,12 @@
                <children>
                   <ImageView fitHeight="74.0" fitWidth="199.0" layoutX="-83.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@Woman%20putting%20puzzle%20pieces%20together.png" />
+                        <Image url="@Woman_putting_puzzle_pieces_together.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="75.0" fitWidth="181.0" layoutX="-109.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@Cloud%20storage,%20database%20and%20hardware.png" />
+                        <Image url="@Cloudstorage_database_and_hardware.png" />
                      </image>
                   </ImageView>
                </children>
