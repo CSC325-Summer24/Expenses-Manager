@@ -50,26 +50,26 @@
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #365577;" BorderPane.alignment="CENTER">
          <children>
-            <PasswordField fx:id="passwordField" layoutX="95.0" layoutY="280.0" promptText="Password" style="-fx-text-fill: #000;">
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor>
-            </PasswordField>
             <TextField fx:id="usernameField" layoutX="95.0" layoutY="237.0" promptText="Username" style="-fx-text-fill: #000;">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <Button fx:id="loginButton" layoutX="143.0" layoutY="340.0" mnemonicParsing="false" style="-fx-background-color: #fff; -fx-text-fill: #000;" text="Log In" onAction="#handleLoginButtonAction"/>
-            <Text fx:id="loginErrorText" fill="#ff0000" layoutX="95.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+            <PasswordField fx:id="passwordField" layoutX="95.0" layoutY="280.0" promptText="Password" style="-fx-text-fill: #000;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+            <Button fx:id="loginButton" layoutX="143.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" style="-fx-background-color: #fff; -fx-text-fill: #000;" text="Log In" />
+            <Text fx:id="loginErrorText" fill="#ff0000" layoutX="95.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@safe.gif"/>
+                  <Image url="@safe.gif" />
                </image>
             </ImageView>
             <Text fill="#aeacac" layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
                <font>
-                  <Font size="20.0"/>
+                  <Font size="20.0" />
                </font>
             </Text>
          </children>
@@ -85,32 +85,32 @@
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
-            <PasswordField fx:id="signupPasswordField" layoutX="95.0" layoutY="280.0" promptText="Password">
-               <cursor>
-                  <Cursor fx:constant="TEXT" />
-               </cursor>
-            </PasswordField>
             <TextField fx:id="signupEmailField" layoutX="95.0" layoutY="237.0" promptText="Email">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </TextField>
+            <PasswordField fx:id="signupPasswordField" layoutX="95.0" layoutY="280.0" promptText="Password">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
             <PasswordField fx:id="signupRetypePasswordField" layoutX="95.0" layoutY="323.0" promptText="Re-type Password">
                <cursor>
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </PasswordField>
-            <Line endY="487.0" layoutY="14.0" startY="-12.999999046325684"/>
-            <Button fx:id="signupButton" layoutX="143.0" layoutY="383.0" mnemonicParsing="false" style="-fx-background-color: #365577;" text="Sign Up" onAction="#handleSignupButtonAction"/>
-            <Text fx:id="signupErrorText" fill="#ff0000" layoutX="95.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+            <Line endY="487.0" layoutY="14.0" startY="-12.999999046325684" />
+            <Button fx:id="signupButton" layoutX="143.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleSignupButtonAction" style="-fx-background-color: #365577;" text="Sign Up" />
+            <Text fx:id="signupErrorText" fill="#ff0000" layoutX="95.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="96.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@piechart.gif"/>
+                  <Image url="@piechart.gif" />
                </image>
             </ImageView>
             <Text layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Signup">
                <font>
-                  <Font size="20.0"/>
+                  <Font size="20.0" />
                </font>
             </Text>
          </children>
