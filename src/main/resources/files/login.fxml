@@ -60,18 +60,25 @@
                   <Cursor fx:constant="TEXT" />
                </cursor>
             </PasswordField>
-            <Button fx:id="loginButton" layoutX="143.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" style="-fx-background-color: #fff; -fx-text-fill: #000;" text="Log In" />
+            <Button fx:id="loginButton" layoutX="143.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" style="-fx-background-color: #fff; -fx-text-fill: #365577;" text="Log In" />
             <Text fx:id="loginErrorText" fill="#ff0000" layoutX="95.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@safe.gif" />
                </image>
             </ImageView>
-            <Text fill="#aeacac" layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+            <Text fill="#fff" layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
                <font>
                   <Font size="20.0" />
                </font>
             </Text>
+<!--            return button -->
+            <Button fx:id="backButton" layoutY="20.0" layoutX="15" minWidth="28.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-text-fill: #fff" text="&lt;" onAction="#handleBackButtonAction">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+
          </children>
       </AnchorPane>
    </left>
@@ -101,7 +108,7 @@
                </cursor>
             </PasswordField>
             <Line endY="487.0" layoutY="14.0" startY="-12.999999046325684" />
-            <Button fx:id="signupButton" layoutX="143.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleSignupButtonAction" style="-fx-background-color: #365577;" text="Sign Up" />
+            <Button fx:id="signupButton" layoutX="143.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleSignupButtonAction" style="-fx-background-color: #365577; -fx-text-fill: #fff" text="Sign Up" />
             <Text fx:id="signupErrorText" fill="#ff0000" layoutX="95.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" />
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="96.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>

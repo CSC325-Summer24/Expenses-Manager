@@ -32,7 +32,7 @@ public class App extends Application {
         fstore = contxtFirebase.firebase();
         fauth = FirebaseAuth.getInstance();
 
-        scene = new Scene(loadFXML("/files/mainPage.fxml"), 652, 652); //loads the main page
+        scene = new Scene(loadFXML("/files/mainPage.fxml"), 652, 660); //loads the main page
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/files/main.css")).toExternalForm()); //uses the css
         primaryStage.setScene(scene);
         primaryStage.show();

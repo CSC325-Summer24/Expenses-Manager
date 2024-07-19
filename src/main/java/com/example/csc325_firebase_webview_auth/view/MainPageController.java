@@ -67,7 +67,7 @@ public class MainPageController {
 
     //event handler for ExpressManager button
     @FXML
-    private void handleExpressManagerButtonAction(ActionEvent event){
+    private void handleExpenseManagerButtonAction(ActionEvent event){
         loadPage("/files/mainPage.fxml");
     }
 

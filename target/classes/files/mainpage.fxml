@@ -12,13 +12,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.MainPageController">
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.MainPageController">
    <content>
       <BorderPane prefHeight="798.0" prefWidth="640.0">
          <top>
             <AnchorPane prefHeight="57.0" prefWidth="648.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="expressManagerButton" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleExpressManagerButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpressManager">
+                  <Button fx:id="expenseManagerButton" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleExpenseManagerButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpenseManager">
                      <font>
                         <Font size="10.0" />
                      </font>
@@ -80,7 +80,7 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Text layoutX="162.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExpressManager">
+                  <Text layoutX="162.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExpenseManager">
                      <font>
                         <Font name="Roboto Bold" size="43.0" />
                      </font>

@@ -55,6 +55,9 @@ public class LoginController {
     @FXML
     private Text signupErrorText;
 
+    @FXML
+    private Button backButton;
+
     //====================================================================================
     @FXML
     private void handleLoginButtonAction(ActionEvent event) {
@@ -90,6 +93,12 @@ public class LoginController {
     }
 
     //====================================================================================
+    @FXML
+    private void handleBackButtonAction(ActionEvent event) {
+        loadPage("/files/mainPage.fxml");
+    }
+
+    //====================================================================================
     private void authenticateUser(String username, String password) {
         try {
             //creates a Firestore query to find a user document with the specified username and password
@@ -102,6 +111,7 @@ public class LoginController {
             List<QueryDocumentSnapshot> documents = querySnapshot.get().getDocuments();
 
             if (!documents.isEmpty()) {
+                System.out.println("Successfully logged in: " + username);
                 loadPage("/files/mainPage.fxml");
             } else {
                 loginErrorText.setText("Incorrect username/password.");
@@ -122,7 +132,7 @@ public class LoginController {
         try {
             UserRecord userRecord = App.fauth.createUser(request);
             saveUserToFirestore(userRecord.getUid(), username, email, password);
-            System.out.println("Successfully created new user: " + userRecord.getUid());
+            System.out.println("Successfully created new user: " + username);
             loadPage("/files/mainPage.fxml");
         } catch (FirebaseAuthException e) {
             e.printStackTrace();

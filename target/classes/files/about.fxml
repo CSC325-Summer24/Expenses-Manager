@@ -36,11 +36,15 @@
                      </font>
                   </Text>
                   <Text fill="#948f8f" layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capstone Project for CSC325" />
+                  <!--
+
                   <Text layoutX="16.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About us">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Text>
+                  -->
+
                   <Text layoutX="14.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At ExpenseManager, our mission is to empower individuals to take control of their finances with ease and confidence. With personalized user profiles stored securely on our servers, you can access your financial data anytime, anywhere. We believe in making powerful financial tools accessible to everyone." wrappingWidth="629.69580078125" />
                   <Text layoutX="15.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExpenseManager is designed to be advanced yet intuitive, providing a simple, user-friendly interface that makes managing your finances effortless. ExpenseManager leverages the robustness of a database, the reliability of Firebase, and the versatility of the Java programming language to deliver a seamless financial management experience. As a free and open-source application, ExpenseManager is continuously evolving, incorporating community feedback and the latest technological advancements." wrappingWidth="628.21630859375" />
                   <Text layoutX="13.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How does it work ?">
