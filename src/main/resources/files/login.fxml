@@ -34,6 +34,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -72,12 +73,13 @@
                   <Font size="20.0" />
                </font>
             </Text>
-<!--            return button -->
-            <Button fx:id="backButton" layoutY="20.0" layoutX="15" minWidth="28.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-text-fill: #fff" text="&lt;" onAction="#handleBackButtonAction">
+            <!--            return button -->
+            <Button fx:id="backButton" layoutX="15" layoutY="20.0" minWidth="28.0" mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="31.0" prefWidth="28.0" style="-fx-background-color: transparent; -fx-text-fill: #fff" text="&lt;">
                <font>
                   <Font size="12.0" />
                </font>
             </Button>
+            <Label layoutX="303.0" layoutY="39.0" style="-fx-text-fill: #fff;" text="Express" />
 
          </children>
       </AnchorPane>
@@ -115,11 +117,12 @@
                   <Image url="@piechart.gif" />
                </image>
             </ImageView>
-            <Text layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Signup">
+            <Text fill="#365577" layoutX="122.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Signup">
                <font>
                   <Font size="20.0" />
                </font>
             </Text>
+            <Label layoutY="40.0" style="-fx-text-fill: #365577;" text="Manager" />
          </children>
       </AnchorPane>
    </right>
