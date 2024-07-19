@@ -111,6 +111,8 @@ public class LoginController {
             List<QueryDocumentSnapshot> documents = querySnapshot.get().getDocuments();
 
             if (!documents.isEmpty()) {
+                QueryDocumentSnapshot document = documents.get(0); // Get the first document
+                App.loggedInUserId = document.getId(); // Set the logged-in user ID
                 System.out.println("Successfully logged in: " + username);
                 loadPage("/files/mainPage.fxml");
             } else {

@@ -10,86 +10,83 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.DashboardController">
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.view.DashboardController">
    <children>
-
-
       <Button fx:id="expressManagerButton" layoutX="17.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleExpressManagerButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="ExpenseManager" textFill="WHITE" />
       <Button fx:id="aboutUsButton" layoutX="416.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleAboutUsButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="About Us" textFill="WHITE" />
       <Button fx:id="dashboardButton" layoutX="495.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleDashboardButtonAction" style="-fx-background-color: transparent; -fx-text-fill: #000;" text="Dashboard" textFill="WHITE" />
       <Button fx:id="loginButton" layoutX="583.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" style="-fx-background-color: #000000;" text="Log In" textFill="WHITE" />
-
+      <Button fx:id="editDeleteExpenseButton" layoutX="425.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleEditDeleteExpenseButtonAction" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="Edit/Delete Expense">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Button>
 
       <Label layoutX="230.0" layoutY="627.0" text="©2024 Group 2. All Rights Reserved.">
          <font>
             <Font name="Roboto" size="12.0" />
-         </font></Label>
+         </font>
+      </Label>
 
-<!--      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="608.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">-->
-<!--         <image>-->
-<!--            <Image url="@profile_empty.png" />-->
-<!--         </image>-->
-<!--      </ImageView>-->
-
-      <TableView layoutX="17.0" layoutY="307.0" prefHeight="289.0" prefWidth="619.0" style="-fx-border-color: #EEE;">
+      <TableView fx:id="expensesTable" layoutX="17.0" layoutY="307.0" prefHeight="289.0" prefWidth="619.0" style="-fx-border-color: #EEE;">
          <columns>
-            <TableColumn prefWidth="407.0" text="Description" />
-            <TableColumn minWidth="0.0" prefWidth="127.0" text="Date" />
-            <TableColumn prefWidth="84.0" text="Amount" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="407.0" text="Description" />
+            <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="127.0" text="Date" />
+            <TableColumn fx:id="amountColumn" prefWidth="84.0" text="Amount" />
          </columns>
       </TableView>
+
       <Label layoutX="17.0" layoutY="100.0" text="Welcome, User">
          <font>
             <Font name="Roboto Bold" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="256.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="View Expenses">
+
+      <Button fx:id="viewExpensesButton" layoutX="88.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleViewExpensesButtonAction" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 6;" text="View Expenses">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="434.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="Edit/Delete">
+      <Button fx:id="addExpenseButton" layoutX="256.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleAddExpenseButtonAction" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="Add Expense">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Label layoutX="18.0" layoutY="272.0" text="Notifications">
+
+      <Label layoutX="16.0" layoutY="192.0" prefHeight="20.0" prefWidth="193.0" text="Manage Reports/Notifications">
          <font>
             <Font name="Roboto Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="16.0" layoutY="192.0" text="Manage Reports">
-         <font>
-            <Font name="Roboto Bold" size="14.0" />
-         </font>
-      </Label>
-      <Button layoutX="432.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="Edit/Delete">
+      <Button fx:id="addReportButton" layoutX="88.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleAddReportButtonAction" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="Add Report">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="View Reports">
+      <Button fx:id="viewReportsButton" layoutX="256.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleViewReportsButtonAction" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="View Reports">
          <font>
             <Font name="Roboto" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="88.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 6;" text="Add Report">
-         <font>
-            <Font name="Roboto" size="12.0" />
-         </font>
-      </Button>
+
       <Line endX="504.0" layoutX="118.0" layoutY="136.0" startX="-100.0" stroke="#cccccc" />
       <Line endX="504.0" layoutX="118.0" layoutY="214.0" startX="-100.0" stroke="#cccccc" />
       <Line endX="504.0" layoutX="118.0" layoutY="297.0" startX="-100.0" stroke="#cccccc" />
-      <Button layoutX="88.0" layoutY="149.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #000; -fx-text-fill: #FFF; -fx-background-radius: 6;" text="Add Expense">
-         <font>
-            <Font name="Roboto" size="12.0" />
-         </font>
-      </Button>
+
       <ImageView fitHeight="30.0" fitWidth="171.0" layoutX="258.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Social_Icons.png" />
          </image>
       </ImageView>
+      <Button fx:id="viewReportsButton1" layoutX="428.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleManageNotificationsButtonAction" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #FFF; -fx-text-fill: #000; -fx-background-radius: 6;" text="Manage Notifications">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="16.0" layoutY="277.0" prefHeight="20.0" prefWidth="193.0" text="Expenses Table">
+         <font>
+            <Font name="Roboto Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

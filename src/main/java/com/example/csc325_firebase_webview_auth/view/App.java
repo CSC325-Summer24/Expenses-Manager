@@ -1,21 +1,17 @@
 package com.example.csc325_firebase_webview_auth.view;
 
-
+import com.example.csc325_firebase_webview_auth.utils.NotificationChecker;
 import com.example.csc325_firebase_webview_auth.model.FirestoreContext;
 import com.google.cloud.firestore.Firestore;
 import com.google.firebase.auth.FirebaseAuth;
-import java.io.IOException;
-import java.util.Objects;
-import java.io.File;
-import java.net.URL;
-import java.util.Arrays;
-import java.util.Enumeration;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.Objects;
 
 /**
  * JavaFX App
@@ -26,6 +22,8 @@ public class App extends Application {
     public static FirebaseAuth fauth;
     public static Scene scene;
     private final FirestoreContext contxtFirebase = new FirestoreContext();
+    public static String loggedInUserId;
+    private NotificationChecker notificationChecker = new NotificationChecker();
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -36,6 +34,15 @@ public class App extends Application {
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/files/main.css")).toExternalForm()); //uses the css
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        // Start checking for notifications
+        notificationChecker.startChecking();
+    }
+
+    @Override
+    public void stop() {
+        // Stop the notification checker
+        notificationChecker.stopChecking();
     }
 
     public static void setRoot(String fxml) throws IOException {

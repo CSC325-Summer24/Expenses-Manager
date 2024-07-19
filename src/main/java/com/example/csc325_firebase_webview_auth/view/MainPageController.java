@@ -108,6 +108,45 @@ public class MainPageController {
         loadPage("/files/login.fxml");
     }
 
+    @FXML
+    private void handleAddExpenseButtonAction(ActionEvent event) {
+        loadPage("/files/addExpense.fxml");
+    }
+
+    @FXML
+    private void handleViewExpensesButtonAction(ActionEvent event) {
+        loadPage("/files/viewExpenses.fxml");
+    }
+
+    @FXML
+    private void handleAddUserButtonAction(ActionEvent event) {
+        loadPage("/files/addUser.fxml");
+    }
+
+    @FXML
+    private void handleViewUsersButtonAction(ActionEvent event) {
+        loadPage("/files/viewUsers.fxml");
+    }
+
+    @FXML
+    private void handleAddNotificationButtonAction(ActionEvent event) {
+        loadPage("/files/addNotification.fxml");
+    }
+
+    @FXML
+    private void handleViewNotificationsButtonAction(ActionEvent event) {
+        loadPage("/files/viewNotifications.fxml");
+    }
+
+    @FXML
+    private void handleGenerateReportButtonAction(ActionEvent event) {
+        loadPage("/files/generateReport.fxml");
+    }
+
+    @FXML
+    private void handleViewReportsButtonAction(ActionEvent event) {
+        loadPage("/files/viewReports.fxml");
+    }
 
 
     //========================================================================================================

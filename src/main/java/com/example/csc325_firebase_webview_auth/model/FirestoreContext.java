@@ -13,18 +13,27 @@ import java.io.IOException;
  */
 public class FirestoreContext {
 
+    private static Firestore firestore;
+
     public Firestore firebase() {
-        try {
-            FirebaseOptions options = new FirebaseOptions.Builder()
-                    .setCredentials(GoogleCredentials.fromStream(getClass().getResourceAsStream("/files/key.json")))
-                    .build();
-            FirebaseApp.initializeApp(options);
-            System.out.println("Firebase is initialized");
-        } catch (IOException ex) {
-            ex.printStackTrace();
+        if (firestore == null) {
+            synchronized (FirestoreContext.class) {
+                if (firestore == null) {
+                    try {
+                        FirebaseOptions options = new FirebaseOptions.Builder()
+                                .setCredentials(GoogleCredentials.fromStream(getClass().getResourceAsStream("/files/key.json")))
+                                .build();
+                        if (FirebaseApp.getApps().isEmpty()) {
+                            FirebaseApp.initializeApp(options);
+                            System.out.println("Firebase is initialized");
+                        }
+                        firestore = FirestoreClient.getFirestore();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+            }
         }
-        return FirestoreClient.getFirestore();
+        return firestore;
     }
-
-
 }
